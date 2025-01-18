@@ -18,4 +18,4 @@ This is a project that is responsive to a variety of screen sizes. It also allow
 
 This webpage is deployed to Github pages.
 
--[Deployment Link] (https://github.com/Glen-Wat/se_project_spots)
+-[Deployment Link] (https://glen-wat.github.io/se_project_spots/)

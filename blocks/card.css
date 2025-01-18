@@ -17,7 +17,8 @@
 }
 
 .card__like-button {
-  background-image: url(../images/Like-icon.svg);
+  margin: 12px 0 2px;
+  background-image: url(../images/likebutton-icon.svg);
   height: 20px;
   width: 23px;
   border: none;
@@ -26,11 +27,11 @@
 }
 
 .card__title {
+  margin: 12px 0 2px;
   width: 413px;
-  height: 24px;
   text-overflow: ellipsis;
   overflow: hidden;
-  line-clamp: 3;
+  text-wrap: nowrap;
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-size: 20px;
   font-weight: 500;
@@ -50,5 +51,6 @@
     width: 100%;
     font-size: 16px;
     line-height: 16px;
+    margin: 12px 0 2px;
   }
 }
