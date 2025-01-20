@@ -24,6 +24,12 @@
   border: none;
   background-color: transparent;
   opacity: 40%;
+  cursor: pointer;
+}
+
+.card__like-button:hover {
+  color: #212121;
+  opacity: 0.7;
 }
 
 .card__title {
@@ -39,6 +45,7 @@
   text-align: left;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
+  color: #212121;
 }
 
 @media screen and (max-width: 627px) {
@@ -51,6 +58,5 @@
     width: 100%;
     font-size: 16px;
     line-height: 16px;
-    margin: 12px 0 2px;
   }
 }

@@ -28,6 +28,7 @@
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   max-width: 420px;
+  color: #212121;
 }
 
 .profile__description {
@@ -60,9 +61,14 @@
   text-decoration-skip-ink: none;
   display: flex;
   align-items: center;
-  color: rgba(21, 21, 21);
+  color: #212121;
   padding: 0;
   cursor: pointer;
+}
+
+.profile__edit-button:hover {
+  color: #212121;
+  opacity: 0.8;
 }
 
 .profile__add-button {
@@ -87,6 +93,11 @@
   text-decoration-skip-ink: none;
   cursor: pointer;
   border: none;
+}
+
+.profile__add-button:hover {
+  background-color: #212121;
+  opacity: 0.8;
 }
 
 @media screen and (max-width: 627px) {
