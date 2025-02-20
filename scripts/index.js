@@ -91,12 +91,12 @@ function getCardElement(data) {
     previewModalCaptionEl.textContent = data.name;
   });
 
-  previewModalCloseButton.addEventListener("click", () => {
-    closeModal(previewModal);
-  });
-
   return cardElement;
 }
+
+previewModalCloseButton.addEventListener("click", () => {
+  closeModal(previewModal);
+});
 
 function openModal(modal) {
   modal.classList.add("modal_opened");
@@ -115,6 +115,7 @@ function handleEditFormSubmit(evt) {
 
 function handleAddCardSubmit(evt) {
   evt.preventDefault();
+  evt.target.reset();
   const inputValues = { name: cardNameInput.value, link: cardLinkInput.value };
   const cardElement = getCardElement(inputValues);
   cardsList.prepend(cardElement);

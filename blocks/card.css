@@ -50,7 +50,9 @@
 
 .card__like-button_liked {
   background-image: url(../images/heart-liked.svg);
+  image-rendering: auto;
   opacity: 1;
+  background-color: transparent;
 }
 
 .card__like-button_liked:hover {
