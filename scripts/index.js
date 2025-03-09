@@ -101,10 +101,21 @@ previewModalCloseButton.addEventListener("click", () => {
 
 function openModal(modal) {
   modal.classList.add("modal_opened");
+  document.addEventListener("keydown", handleEsc);
+}
+
+function handleEsc(evt) {
+  if (evt.key === "Escape") {
+    const modal = document.querySelector(".modal_opened");
+    if (modal) {
+      closeModal(modal);
+    }
+  }
 }
 
 function closeModal(modal) {
   modal.classList.remove("modal_opened");
+  document.removeEventListener("keydown", handleEsc);
 }
 
 function handleEditFormSubmit(evt) {
@@ -145,6 +156,16 @@ cardModalButton.addEventListener("click", () => {
 });
 cardModalClosebutton.addEventListener("click", () => {
   closeModal(cardModal);
+});
+
+const modals = document.querySelectorAll(".modal");
+
+modals.forEach((modal) => {
+  modal.addEventListener("click", function (event) {
+    if (event.target.classList.contains("modal")) {
+      closeModal(modal);
+    }
+  });
 });
 
 editFormElement.addEventListener("submit", handleEditFormSubmit);
