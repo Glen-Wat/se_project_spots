@@ -12,7 +12,7 @@ import { deleteButtonText } from "../utils/helper.js";
 import logoPath from "../images/logo.svg";
 
 import pencilPath from "../images/Pencil.svg";
-import avatarPencil from "../images/Pencil-lite.svg";
+
 import plusPath from "../images/plus.svg";
 import Api from "../utils/Api.js";
 
