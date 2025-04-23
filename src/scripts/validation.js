@@ -47,7 +47,7 @@ const toggleButtonState = (inputList, buttonElement, config) => {
   }
 };
 
-const disableButton = (buttonElement, config) => {
+export const disableButton = (buttonElement, config) => {
   buttonElement.disabled = true;
   buttonElement.classList.add(config.inactiveButtonClass);
 };
@@ -58,7 +58,7 @@ export const resetValidation = (formEl, inputList, settings) => {
   });
 };
 
-const setEventListners = (formEl, config) => {
+const setEventListeners = (formEl, config) => {
   const inputList = Array.from(formEl.querySelectorAll(config.inputSelector));
   const buttonElement = formEl.querySelector(config.submitButtonSelector);
 
@@ -72,8 +72,8 @@ const setEventListners = (formEl, config) => {
   });
 };
 export const enableValidation = (config) => {
-  const formLIST = Array.from(document.querySelectorAll(config.formSelector));
-  formLIST.forEach((formEl) => {
-    setEventListners(formEl, config);
+  const formList = Array.from(document.querySelectorAll(config.formSelector));
+  formList.forEach((formEl) => {
+    setEventListeners(formEl, config);
   });
 };
