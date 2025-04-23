@@ -1,6 +1,6 @@
 import {
   enableValidation,
-  validationConfig,
+  settings,
   resetValidation,
   disableButton,
 } from "../scripts/validation.js";
@@ -128,7 +128,7 @@ const deleteModalCloseButton = deleteModal.querySelector(
   ".modal__close-button, .modal__close-button_type_delete_preview"
 );
 const deleteModalCancelButton = deleteModal.querySelector(
-  ".modal__submit-button-cancel-card"
+  ".modal__submit-button-cancel"
 );
 
 // card elements
@@ -248,7 +248,7 @@ function handleAddCardSubmit(evt) {
       const cardElement = getCardElement(data);
       cardsList.prepend(cardElement);
       evt.target.reset();
-      disableButton(cardSubmitBtn, validationConfig);
+      disableButton(cardSubmitBtn, settings);
       closeModal(cardModal);
     })
     .catch(console.error)
@@ -266,7 +266,7 @@ function handleAvatarSubmit(evt) {
     .editAvatarInfo({ avatar: avatarInput.value })
     .then((data) => {
       avatarImage.src = data.avatar;
-      disableButton(avatarSubmitButton, validationConfig);
+      disableButton(avatarSubmitButton, settings);
       closeModal(avatarModal);
     })
     .catch(console.error)
@@ -305,7 +305,7 @@ profileEditButton.addEventListener("click", () => {
   resetValidation(
     editFormElement,
     [editModalNameInput, editModalDescriptionInput],
-    validationConfig
+    settings
   );
   openModal(editProfileModal);
 });
@@ -314,7 +314,7 @@ editModalCloseButton.addEventListener("click", () => {
 });
 
 avatarModalButton.addEventListener("click", () => {
-  resetValidation(avatarFormElement, [avatarInput], validationConfig);
+  resetValidation(avatarFormElement, [avatarInput], settings);
   openModal(avatarModal);
 });
 
@@ -355,4 +355,4 @@ deleteModalCancelButton.addEventListener("click", () => {
   closeModal(deleteModal);
 });
 
-enableValidation(validationConfig);
+enableValidation(settings);
