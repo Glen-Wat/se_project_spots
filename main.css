@@ -354,14 +354,14 @@ template {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  src: url(35d26b781dc5fda684cc.ttf) format("truetype");
+  src: url(/se_project_spots/35d26b781dc5fda684cc.ttf) format("truetype");
 }
 
 @font-face {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
-  src: url(673ed42382ab264e0bf5.ttf) format("truetype");
+  src: url(/se_project_spots/673ed42382ab264e0bf5.ttf) format("truetype");
 }
 
 .page {
@@ -660,7 +660,7 @@ template {
 
 .card__like-button {
   margin: 12px 0 2px;
-  background-image: url(29a25a3c4fb6b6e4a7d6.svg);
+  background-image: url(/se_project_spots/29a25a3c4fb6b6e4a7d6.svg);
   height: 20px;
   width: 23px;
   border: none;
@@ -671,7 +671,7 @@ template {
 
 .card__delete-button {
   position: absolute;
-  background-image: url(d19faa0112f44e2b6e01.svg);
+  background-image: url(/se_project_spots/d19faa0112f44e2b6e01.svg);
   height: 32px;
   width: 32px;
   top: 10px;
@@ -682,7 +682,7 @@ template {
 }
 
 .card__delete-button:hover {
-  background-image: url(86ae92bd1a937388d496.svg);
+  background-image: url(/se_project_spots/86ae92bd1a937388d496.svg);
 }
 
 .card__like-button:hover {
@@ -690,14 +690,14 @@ template {
 }
 
 .card__like-button_liked {
-  background-image: url(f9b5881bc5f3c3308e3b.svg);
+  background-image: url(/se_project_spots/f9b5881bc5f3c3308e3b.svg);
   image-rendering: auto;
   opacity: 1;
   background-color: transparent;
 }
 
 .card__like-button_liked:hover {
-  background-image: url(29c9644b290e6cb15b35.svg);
+  background-image: url(/se_project_spots/29c9644b290e6cb15b35.svg);
 }
 
 .card__title {
@@ -823,7 +823,7 @@ template {
   right: 50px;
   width: 40px;
   height: 40px;
-  background-image: url(a326e1ad56a2cd944a28.svg);
+  background-image: url(/se_project_spots/a326e1ad56a2cd944a28.svg);
   cursor: pointer;
   padding: 0;
   border: none;
@@ -831,7 +831,7 @@ template {
 }
 
 .modal__close-button_type_preview {
-  background-image: url(53f0bab7ec2e970778f9.svg);
+  background-image: url(/se_project_spots/53f0bab7ec2e970778f9.svg);
   padding: 0;
   top: 0;
   right: -37.5px;
@@ -947,7 +947,7 @@ template {
   height: 40px;
   border-width: 0;
   background-color: transparent;
-  background-image: url(a326e1ad56a2cd944a28.svg);
+  background-image: url(/se_project_spots/a326e1ad56a2cd944a28.svg);
 
   opacity: 1;
   cursor: pointer;
@@ -972,7 +972,7 @@ template {
 #delete-modal .modal__close-button_type_delete_preview {
   right: -44px;
   top: -10px;
-  background-image: url(8499aa97f789c806789c.png);
+  background-image: url(/se_project_spots/8499aa97f789c806789c.png);
   opacity: 1;
 }
 
